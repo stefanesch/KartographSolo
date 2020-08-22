@@ -2,12 +2,38 @@ Design
 - JSON Modell mit allen Daten
 
 
-Spielfeld ist HTML Table 11x11 mit HREFs, Style jeder Zelle per CSS gebunden an das Modell, 
-im Modell ist jede Zelle eine eigene Entity, eine Eigenschaft steuert den Sryle der Zelle in der Tabelle
-(Leer, Wald, ...). der Händler vom HRef gibt Zeile und Spalte an den Eventhandler im JavaScript weiter
+Spielfeld ist HTML Table 11x11 mit HREFs mit GIF, GIF jeder Zelle gebunden an das Modell, 
+im Modell ist jede Zelle eine eigene Entity, eine Eigenschaft steuert das GIF der Zelle in der Tabelle
+(Leer, Wald, ...). der Link vom HRef gibt Zeile und Spalte an den Eventhandler im JavaScript weiter
 
 Für die Wertung geht LOOPt JavaScript über alle Zellen im Modell 
 
 Platzieren neuer Teile per Click auf die Zelle. Drehen und einbuchen per Button. 
 Später evtl. mit Hofer und Click=Einbuchen.
 
+Während des Platzierens it die markierte Zelle rot oder grün, je nach dem ob das Teil passt.
+in einer späteren Version verbessern wir die Steuerung mit onMouseOver...
+
+Beim Start der App werden die Aufgaben den Jahreszeiten zugeordnet und angezeigt. Markierung der aktuellen Jahreszeit und Zeitzähler
+
+Für jede Runde wird per Zufall eine Spielkarte ausgewählt und dargestellt.
+
+CSS Styles
+- Basic Hintergrund, Schrift, ...
+- Zellen im Spielfeld 1x Basic und 10x abgeleitet für 4 Landschaften, 
+  leer, rot, grün, Monster, Berg, Ruine
+- Aufgaben Basic + 1x je Aufgabe im Pool oder nur Gifs?
+
+
+Modell
+- Spielfeld 11x11 Zellen mit Zeile, Spalte, Inhalt für CSS und Spielmobil
+- Münzen gesamt
+- Münzen aus Bergwertung
+- Punkte Aufgabe 1, Aufgabe 2, Münzen, Monster
+-- 4x je Spielrunde
+-- Gesamtergebnis
+- Zeitzähler
+- Spielkarten
+- Aufgaben
+-- aktuelle Frühjahr, Sommer, Herbst, Winter
+-- ?x Aufgabenvorrat
